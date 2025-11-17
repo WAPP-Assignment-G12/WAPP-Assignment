@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ValoPro Wireframe</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div id="app"></div>
+
+    <script>
+        /* -------------- STATE -------------- */
+        let state = {
+            selectedPage: 'home'
+        };
+
+        const pages = {
+            home: HomePage(),
+            about: AboutUsPage(),
+            weaponsPreview: WeaponsPage(true),
+            agentsPreview: AgentsPage(true),
+            pricing: PricingPage(),
+            login: LoginPage(),
+            register: RegisterPage()
+        };
+        /* -------------- PAGE DEFINITIONS -------------- */
+        
+ 
+
+        
+
+        
+
+        
+
+// --- Top Login Button ---
+if (event.target.closest('#top-login-btn')) {
+    state.selectedRole = 'guest';
+    state.selectedPage = 'login';
+    renderApp();
+}
+
+       
+
+        renderApp();
+    </script>
+</body>
+
+</html>
